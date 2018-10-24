@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="http://akimoto.jp/website-in-2018/">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Websites in 2018</title>
+  <meta name="author" content="Seva Zaikov">
+  <meta name="translator" content="@akky">
+  <meta name="description" content="肥大したウェブサイトのサンプル in 2018 - Japanese localized version">
+  <meta name="keywords" content="モダンな肥大したウェブサイト, websites in 2018, seva zaikov, bloomca, Japanese, localized">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@akky">
+  <meta name="twitter:title" content="Websites in 2018">
+  <meta name="twitter:description" content="肥大したウェブサイトのサンプル in 2018 日本語翻訳版">
+  <meta name="twitter:image" content="http://www.gravatar.com/avatar/01c565fdb4aa0f77647b8558f1ae000f?s=200">
+</head>
+<body>
+  <div id="start-app">
+    <h1>
+      2018年のウェブサイト
+    </h1>
+    <button id="start-btn" class="btn">
+      始める
+    </button>
+    <div style="position: absolute; bottom: 50px; left: 0; right: 0; font-size: 120%; text-align: center; line-height: 1.5em;">
+      原案 - telegramチャンネル <a href="https://t.me/uxlive/6571" target="_blank">uxlive</a>より。
+      <br />
+      作者 – <a href="https://blog.bloomca.me/about" target="_blank">Seva Zaikov</a> (<a href="https://github.com/Bloomca/website-in-2018" target="_blank">source code</a>)
+      <br />
+      <a href="https://2018.bloomca.me/en" target="_blank">オリジナル</a>, 翻訳 – <a href="https://twitter.com/akky" target="_blank">@akky</a>
+      <br />
+    </div>
+  </div>
+  <div id="notification" style="display: none">
+    <img class="loader" src="./spinner.gif" />
+    <div class="notification">
+      <p class="notification-text">
+        通知を受け取りますか?
+      </p>
+      <div class="notification-choices">
+        <button id="no-notifications-btn">
+          いいえ
+        </button>
+        <button id="yes-notifications-btn">
+          はい
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="cookies" style="display: none;">
+    <img class="loader" src="./spinner.gif" />
+    <div class="cookies">
+      <h2>
+        プライバシーについて
+      </h2>
+      <p>
+        当サイトでは、サイト体験の改善や適切な広告を表示するために Cookie を利用します。
+      </p>
+      <p>
+        より詳しくは、<a href="#">利用規約</a> や <a href="#a">Cookies ポリシー</a>をご覧ください。
+      </p>
+      <button id="cookies-btn" class="btn">
+        了解
+      </button>
+    </div>
+  </div>
+  <div id="age-verification" style="display: none;">
+    <div class="choice-container">
+      <div class="choice">
+          <h2>
+            あなたは18歳以上ですか?
+          </h2>
+          <div>
+            <button id="yes-age-verification-btn" class="choice-btn">
+              はい
+            </button>
+            <button id="no-age-verification-btn" class="choice-btn">
+              いいえ
+            </button>
+          </div>
+        </div>
+    </div>
+    <div style="display: none">
+      <input placeholder="日" />
+      <input placeholder="月" />
+      <input placeholder="年" />
+      <button>
+        送信
+      </button>
+    </div>
+  </div>
+  <div id="restrict-age" class="container" style="display: none">
+    <h1>このサイトを閲覧することはできません</h1>
+    <p>
+      カリフォルニア州法28条、ハーグ条約, 海事法等により、18歳未満の人に当ウェブサイトのコンテンツを見せることはできません。
+    </p>
+  </div>
+  <div id="subscribe" style="display: none;">
+    <div class="subscription-container">
+      <div class="subscription">
+        <div id="close-subscribe-btn" class="subscription-close"><span style="position: relative; top: -1px;">x</span></div>
+        <h1>
+          ニュースレターの購読
+        </h1>
+        <p>
+          我々からのニュースやお得な情報をいち早く知りたいですか? 毎週興味深い情報を送らせていただきます。スパムは送りません。あなたのメールアドレスを売ったり他人に渡したりすることはありません。
+        </p>
+        <input placeholder="あなたのメールアドレス" />
+        <button id="yes-subscribe-btn">
+          購読する
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="block-material" class="container" style="display: none;">
+    <h2>
+      広告ブロック機能を止めてください
+    </h2>
+    <p>
+      広告は私たちの主な収入源です。我々は全力をつくしてサイトが無料で見られるようにします。広告ブロックのホワイトリストへ追加いただけると助かります。
+    </p>
+    <p>
+      私たち自身も広告は嫌いです。しかし当サービスをできるだけ多くの人へ、しかも無料で届けるためには必要です。広告なしにこれは実現できません。
+    </p>
+    <button id="block-material-btn" class="btn">
+      わかりました
+    </button>
+  </div>
+  <div id="donate" class="container" style="display: none;">
+    <h1>寄付</h1>
+    <p>
+      当ウェブサイトは財政的に独立しています - 私たちの行動に影響を与えるものはありません。居もしない投資家や所有者の意見を広めたりはしません。他と違い、課金の壁などを設けずすべてを無料でアクセス可能にすることに重きを置いています。
+    </p>
+    <p>
+      残念ながら、広告からの収入は減り続けています。私たちがやっていることを続けるために利用者からのより多くの貢献が必要です。私たちへの寄付により、サービス自身を助けるだけでなく、他の人々、ひいてはすべてのオープンなウェブが助かります。いつもありがとうございます。
+    </p>
+    <button id="donate-btn" class="btn">
+      わかりました
+    </button>
+  </div>
+  <div id="consultant" style="display: none;">
+    イリーナ、コンサルタント
+    <div>
+      こんにちは、どうすればお手伝いできますか?
+      <div id="close-consultant-btn">x</div>
+      <input />
+      <button id="send-consultant-btn">
+        送信する
+      </button>
+    </div>
+  </div>
+  <div id="search-results" style="display: none;">
+    <div class="choice-container">
+      <div class="choice">
+        <h2>
+          お探し物は見つかりましたか?
+        </h2>
+        <div>
+          <button id="yes-search-results" class="choice-btn">
+            はい
+          </button>
+          <button id="no-search-results" class="choice-btn">
+            いいえ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wrong" style="display: none">
+    <h1>
+      何か問題があったようです
+    </h1>
+    <p style="text-align: center">
+      我々の素晴らしいチームは、問題をすでに認識し解決へ動いています。ご不便をおかけします!
+    </p>
+    <button class="btn" id="wrong-button">
+      残念な話 :(
+    </button>
+    <div class="recommend">
+      <h3>
+        私たちのことをお友達、同僚、家族らに推薦したいと思いますか?
+      </h3>
+      <div class="recommend-circles">
+        <div class="recommend-circle" id="recommend-1">1</div>
+        <div class="recommend-circle" id="recommend-2">2</div>
+        <div class="recommend-circle" id="recommend-3">3</div>
+        <div class="recommend-circle" id="recommend-4">4</div>
+        <div class="recommend-circle" id="recommend-5">5</div>
+        <div class="recommend-circle" id="recommend-6">6</div>
+        <div class="recommend-circle" id="recommend-7">7</div>
+        <div class="recommend-circle" id="recommend-8">8</div>
+        <div class="recommend-circle" id="recommend-9">9</div>
+        <div class="recommend-circle" id="recommend-10">10</div>
+      </div>
+    </div>
+  </div>
+  <div id="finish" class="container" style="display: none;">
+    <h1>
+      これでおしまい!
+    </h1>
+    <p>
+      もちろん、これらすべての要素が悪いわけではありません。不必要な情報や動きのおかしなウィジェットの無い、良い・速い・レスポンシブなサイトもたくさんあるでしょう。
+    </p>
+    <p>
+      なぜこんなことになってしまったか、将来のウェブ体験を改善するために我々に何ができるのか、誰かが考えてくれることでしょう。
+    </p>
+    <div style="position: absolute; bottom: 50px; left: 0; right: 0; font-size: 120%; text-align: center; line-height: 1.5em;">
+        原案は telegram のチャンネル <a href="https://t.me/uxlive/6571" target="_blank">uxlive</a> より。
+        <br />
+        著者 – <a href="https://blog.bloomca.me/about" target="_blank">Seva Zaikov</a> (<a href="https://github.com/Bloomca/website-in-2018" target="_blank">ソースコード</a>)
+        <br />
+        <a href="https://2018.bloomca.me/en" target="_blank">オリジナル</a>, 翻訳 – <a href="https://twitter.com/akky" target="_blank">@akky</a>
+        <br />
+      </div>
+  </div>
+  <script src="./client.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2782880-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2782880-1');
+  </script>
+</body>
+</html>
